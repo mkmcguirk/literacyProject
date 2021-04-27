@@ -7,7 +7,7 @@
 % Date: 4/10/21
 
 gameCell= {'Flick It!','Bop It!','Twist It!','Shake It!','Pull It!'};
-for iCnt=1:10
+for iCnt=1:20
     randomNum= randi(length(gameCell)); % finds a random number up to the length 
     % of the cell
     disp(gameCell{randomNum});
