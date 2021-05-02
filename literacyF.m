@@ -1,5 +1,5 @@
 function literacyF(app)
-% mk is testing this 
+% mk is testing this and mary is seeing if it works as well 
 %% load data 
 edudata=readtable('Editeddata.xlsx') ;
 edudata=table2cell(edudata) ; 
