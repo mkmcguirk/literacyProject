@@ -1,6 +1,5 @@
 function literacyF(app)
-% mk is testing this and mary is seeing if it works as well lets try this
-% again one more time! working on it 
+% for the graphs, use gausstool and coastertool apps for reference!
 %% load data 
 edudata=readtable('Editeddata.xlsx') ;
 edudata=table2cell(edudata) ; 
