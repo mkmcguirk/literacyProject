@@ -2,6 +2,9 @@ function barGraph(app)
 myRow=findCountry(app.countryDropDown.Value);
 [x,y]= arrayMaker(myRow);
 bar(app.barAxes,x,y);
+xlabel(app.barAxes,'Year');
+ylabel(app.barAxes,'Literacy Rate %');
+title(app.barAxes,['Data for ',app.countryDropDown.Value]);
 end
 
 

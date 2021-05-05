@@ -1,5 +1,5 @@
 function map(app)
-% for the graphs, use gausstool and coastertool apps for reference!
+% can we make it so the highlighted country is a different color? 
 %% load data 
 edudata=readtable('Editeddata.xlsx') ;
 edudata=table2cell(edudata) ; 
