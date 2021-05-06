@@ -19,11 +19,7 @@ for iCnt=5:col
     end
 end
 % create geobubble 
-if selectedLat==0
-    geobubble(app.mapPanel,LAT,LON);
-else
-    geobubble(app.mapPanel,selectedLat,selectedLong);
-end
+geobubble(app.mapPanel,LAT,LON);
 
 
 % make colormap 
@@ -31,8 +27,9 @@ color_map=[66,238,26;
     235,220,29;
     234,69,30]./255 ;
 % empty cell array
+disp(num2str(selectedLat));
 
-
+geoshow(selectedLat,selectedLong)
 
 
 year=app.yearEditField.Value ;
