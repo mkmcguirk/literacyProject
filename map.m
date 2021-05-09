@@ -12,7 +12,7 @@ LAT=cell2mat(edudata(countries,2));
 LON=cell2mat(edudata(countries,3)); 
 selectedLat=0;
 selectedLong=0;
-for iCnt=5:col
+for iCnt=1:col
     if strcmp(edudata(iCnt,1),app.countryDropDown.Value)
         selectedLat= cell2mat(edudata(iCnt,2));
         selectedLong=cell2mat(edudata(iCnt,3));
