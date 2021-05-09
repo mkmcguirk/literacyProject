@@ -6,7 +6,7 @@ if size(x)==0
 else
     plot(app.plotAxes,x,y,'b-');
 end
-xlabel(app.barAxes,'Year');
-ylabel(app.barAxes,'Literacy Rate %');
-title(app.barAxes,['Data for ',app.countryDropDown.Value]);
+%xlabel(app.barAxes,'Year');
+%ylabel(app.barAxes,'Literacy Rate %');
+%title(app.barAxes,['Data for ',app.countryDropDown.Value]);
 end
