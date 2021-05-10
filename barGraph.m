@@ -8,8 +8,8 @@ myRow=findCountry(app.countryDropDown.Value); % calls function to find
 [a,b]= arrayMaker(myRow);
 aLen=length(a);
 bLen=length(b);
-x=[1970,1980,1990,2000,2010];
-y=zeros(1,5);
+x=[1970,1980,1990,2000,2010]; % x values 
+y=zeros(1,5); % for loops will set it to the averages
 % for 1970's
 average70=0;
 counter70=0;
@@ -62,5 +62,6 @@ for iCnt=1:aLen
 end
 y(5)= average2010/counter2010;
 bar(app.barAxes,x,y);
+axis(app.barAxes,[1960 2020  0  100])
 end
 

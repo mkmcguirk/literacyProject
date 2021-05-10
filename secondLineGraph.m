@@ -1,12 +1,11 @@
 function secondLineGraph(app)
 % this one is an extension of lineGraph.m,
 % it allows the user to plot a second graph so that they can compare
-% coded by both partners 
 firstCountry=findCountry(app.countryDropDown.Value);
 [a,b]= arrayMaker(firstCountry);
 secondCountry=findCountry(app.secondCountry.Value);
 [c,d]= arrayMaker(secondCountry);
-
+% plots the two different lines, if applicable 
 if size(a)==0 & size(c)==0
      plot(app.plotAxes,0,0);
 elseif size (a)==0 & size(c)~=0

@@ -38,7 +38,7 @@ country=findCountry(app.countryDropDown.Value) ;
 
 allyears=data(country,:) 
 
-[leny,h]=size(allyears)
+[leny,h]=size(allyears);
 
 % some years do not have data, if this year does not have data from this
 
@@ -48,7 +48,7 @@ for icnt=1:h
 
     if year == data(1,icnt)
 
-        colyear=icnt 
+        colyear=icnt ;
 
     end 
 
@@ -60,51 +60,45 @@ end
 
 % values 15 and 5 years before the selected year 
 
- 
-
- 
-
 min15=year-15 ;
 
 min5=year-5 ;
 
 priorrange= min15:min5 ;
 
- 
-
-count=0
+count=0;
 
 for icnt=min15:min5
 
-    count=count+1
+    count=count+1;
 
     tablecell{count,1}=icnt ; 
 
     
 
-    tablecell{count,2}=data(country, colyear-16+count)
+    tablecell{count,2}=data(country, colyear-16+count);
 
     
 
-    tablecell{count,3}=icnt+10
+    tablecell{count,3}=icnt+10;
 
     
 
-    tablecell{count,4}=data(country, colyear-6+count)
+    tablecell{count,4}=data(country, colyear-6+count);
 
     
 
-    tablecell{count,5}=icnt+20
+    tablecell{count,5}=icnt+20;
 
     
 
-    tablecell{count,6}=data(country, colyear+4+count)
+    tablecell{count,6}=data(country, colyear+4+count);
 
 end 
 
  
 
-[cellrow,cellcol]=size(tablecell) 
+[cellrow,cellcol]=size(tablecell) ;
 
  
 
@@ -114,11 +108,11 @@ for icnt=1:cellrow
 
         if tablecell{icnt,icnt2}==0
 
-            tablecell{icnt,icnt2}='  No data' 
+            tablecell{icnt,icnt2}='  No data' ;
 
         else 
 
-            tablecell{icnt,icnt2}=num2str(tablecell{icnt,icnt2})
+            tablecell{icnt,icnt2}=num2str(tablecell{icnt,icnt2});
 
         end 
 
@@ -128,5 +122,5 @@ end
 
  
 
-app.yearsTable.Data=tablecell 
+app.yearsTable.Data=tablecell; 
 
