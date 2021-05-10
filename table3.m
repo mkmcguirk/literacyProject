@@ -2,7 +2,7 @@ function table3(app)
 
 %% load data 
 
-data=table2array(readtable('test123.xlsx')); 
+data=table2array(readtable('theData.xlsx')); 
 
 %% set year 
 

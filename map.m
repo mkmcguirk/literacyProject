@@ -1,5 +1,4 @@
-function map(app)
-% can we make it so the highlighted country is a different color? 
+function map(app) 
 %% load data 
 edudata=readtable('Editeddata.xlsx') ;
 edudata=table2cell(edudata) ; 

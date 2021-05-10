@@ -1,5 +1,5 @@
 function [x,y]=arrayMaker(countryNum)
-table = table2array(readtable('test123.xlsx'));
+table = table2array(readtable('theData.xlsx'));
 [row,col]=size(table);
 x=[];
 y=[];
