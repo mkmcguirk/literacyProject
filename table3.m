@@ -1,5 +1,7 @@
 function table3(app)  
-
+% this function sets up the table and displays the data of
+% the selected year's decade, as well as the previous and next
+% this function was programmed by mary feeney 
 %% load data 
 
 data=table2array(readtable('theData.xlsx')); 

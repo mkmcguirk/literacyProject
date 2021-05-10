@@ -1,5 +1,7 @@
 % this function lets u find the number of the country (when plotting stuff)
 function number=findCountry(country)
+% this isnt the nicest looking code, but it gets the job done
+% array of countries, its position in it will be returned and used
 countries={'Country',
 'Afghanistan',
 'Albania',
@@ -259,7 +261,8 @@ countries={'Country',
 'Upper middle income'};
 number=1;
 for iCnt=2:size(countries)
-    if strcmp(countries(iCnt),country)
+    if strcmp(countries(iCnt),country) % compares to see if the 
+        % inputted country matches
         number= iCnt;
     end
 end

@@ -1,5 +1,10 @@
 function barGraph(app)
-myRow=findCountry(app.countryDropDown.Value);
+% this is the code for creating the bar graph of the decades;
+% using for loops, it averages the data points within a certain 
+% decade, if they are not there it is set to zero
+% coded by mk mcguirk 
+myRow=findCountry(app.countryDropDown.Value); % calls function to find
+% country number 
 [a,b]= arrayMaker(myRow);
 aLen=length(a);
 bLen=length(b);
@@ -57,8 +62,5 @@ for iCnt=1:aLen
 end
 y(5)= average2010/counter2010;
 bar(app.barAxes,x,y);
-%xlabel(app.barAxes,'Decade');
-%ylabel(app.barAxes,'Literacy Rate %');
-%title(app.barAxes,['Decade Data for ',app.countryDropDown.Value]);
 end
 

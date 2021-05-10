@@ -1,4 +1,6 @@
 function map(app) 
+% coded by mary feeney
+% illustrates map and zooms in on selected country 
 %% load data 
 edudata=readtable('Editeddata.xlsx') ;
 edudata=table2cell(edudata) ; 
@@ -37,7 +39,8 @@ color_map=[66,238,26;
 year=app.yearEditField.Value ;
 
 yearnum=year-1963 ; 
-% fix later to add colors to map: 
+
+% fix later to add colors to map, we decided to abandon this idea
 % 
 % percent=cell2mat(edudata(countries,yearnum))
 % 
